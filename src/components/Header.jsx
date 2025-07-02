@@ -8,6 +8,7 @@ function Header() {
     const [cartCount, setCartCount] = useState(0);
     const [item, setitem] = useState(false);
 
+
     useEffect(() => {
         const storedCart = JSON.parse(localStorage.getItem('cart')) || [];
         setCartCount(storedCart.length);
@@ -33,7 +34,7 @@ function Header() {
     const showblock = () => {
         item ? setitem(false) : setitem(true);
     }
-    
+
     return (
         <header className="bg-white shadow-sm">
             <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
@@ -52,10 +53,10 @@ function Header() {
                             <ChevronDown className="ml-1 w-4 h-4" onClick={showblock} />
                         </button>{
                             item ? <div className="absolute z-10 mt-2 w-32 bg-white border border-gray-100 rounded shadow-md">
-                                <a href="#" className="block px-4 py-2 hover:bg-gray-100">Spicy</a>
-                                <a href="#" className="block px-4 py-2 hover:bg-gray-100">Tasty</a>
-                                <a href="#" className="block px-4 py-2 hover:bg-gray-100">Delicious</a>
-                                <a href="#" className="block px-4 py-2 hover:bg-gray-100">Crispy</a>
+                                <a href="#Spicy" className="block px-4 py-2 hover:bg-gray-100">Spicy</a>
+                                <a href="#Tasty" className="block px-4 py-2 hover:bg-gray-100">Tasty</a>
+                                <a href="#Delicious" className="block px-4 py-2 hover:bg-gray-100">Delicious</a>
+                                <a href="#Crispy" className="block px-4 py-2 hover:bg-gray-100">Crispy</a>
                             </div> : <div className='hidden'></div>
                         }
 

@@ -1,10 +1,22 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import dishes from '../../../assets/data.json';
 import DishCard from './DishCard';
-import { Funnel } from 'lucide-react'; 
+import { Funnel } from 'lucide-react';
 
 const OurDishes = () => {
   const [category, setCategory] = useState('All');
+  useEffect(() => {
+  const updateCategoryFromHash = () => {
+    const newCategory = window.location.hash.replace('#', '') || 'All';
+    setCategory(newCategory);
+  };
+
+  updateCategoryFromHash();
+  window.addEventListener('hashchange', updateCategoryFromHash);
+  return () => {
+    window.removeEventListener('hashchange', updateCategoryFromHash);
+  };
+}, []);
 
   const handleAddToCart = (dish) => {
     const existingCart = JSON.parse(localStorage.getItem('cart')) || [];
