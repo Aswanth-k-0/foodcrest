@@ -4,7 +4,7 @@ import hero from '../../../assets/Images/hero.jpg';
 function HeroSection() {
   return (
     <div
-      className="relative w-full h-[500px] bg-cover bg-center flex items-center pb-4 border border-b-2 border-gray-300"
+      className="relative w-full h-[600px] bg-cover bg-center flex items-center pb-4 border border-b-2 border-gray-300"
       style={{ backgroundImage: `url(${hero})` }}
     >
 
