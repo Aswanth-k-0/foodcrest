@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Spicy Chicken Wings",
+    "image": "/src/assets/images/img1.jpg",
+    "price": 10.99,
+    "rating": 5,
+    "category": "Spicy"
+  },
+  {
+    "id": 2,
+    "title": "Tasty Beef Burger",
+    "image": "/src/assets/images/img2.jpg",
+    "price": 12.99,
+    "rating": 5,
+    "category": "Tasty"
+  },
+  {
+    "id": 3,
+    "title": "Delicious Pasta",
+    "image": "/src/assets/images/img3.jpg",
+    "price": 10.99,
+    "rating": 5,
+    "category": "Delicious"
+  },
+  {
+    "id": 4,
+    "title": "Crispy Fried Chicken",
+    "image": "/src/assets/images/img4.jpg",
+    "price": 11.99,
+    "rating": 5,
+    "category": "Crispy"
+  },
+  {
+    "id": 5,
+    "title": "Spicy Paneer Wrap",
+    "image": "/src/assets/images/img5.jpg",
+    "price": 10.99,
+    "rating": 5,
+    "category": "Spicy"
+  },
+  {
+    "id": 6,
+    "title": "Delicious Veg Curry",
+    "image": "/src/assets/images/img6.jpg",
+    "price": 12.99,
+    "rating": 5,
+    "category": "Delicious"
+  }
+]
